@@ -1,0 +1,45 @@
+\documentclass[runningheads]{llncs}
+\usepackage[T1]{fontenc}
+\usepackage{showframe}                      % print page margins, remove when positioning is satisfying
+\usepackage{blindtext}                      % generate blind texts
+\usepackage{graphicx}                       % necessary for inserting .pdfs 
+\usepackage[hidelinks]{hyperref}            % the badge is a link to the actual DOI 
+\usepackage[firstpage]{draftwatermark}      % free badge placement
+
+\begin{document}
+%
+\title{Contribution Title\thanks{Supported by organization x.}}
+\author{%
+First Author\inst{1} \and
+Second Author\inst{2,3} \and
+Third Author\inst{3}}
+
+\institute{%
+Princeton University, Princeton NJ 08544, USA \and
+%
+Springer Heidelberg, Heidelberg, Germany\\
+\email{lncs@springer.com} \and
+%
+ABC Institute, \\
+Rupert-Karls-University Heidelberg, Heidelberg, Germany\\
+\email{\{abc,lncs\}@uni-heidelberg.de}}
+
+\maketitle
+
+\SetWatermarkAngle{0}
+\SetWatermarkText{\raisebox{14.5cm}{%
+  \hspace{10.3cm}%
+  \href{INSERT DOI OF THE ARTIFACT HERE}{\includegraphics[width=20mm,keepaspectratio]{badge-available.pdf}}%
+  % \href{INSERT DOI OF THE ARTIFACT HERE}{\includegraphics[width=20mm,keepaspectratio]{badge-functional.pdf}}%
+  % \href{INSERT DOI OF THE ARTIFACT HERE}{\includegraphics[width=20mm,keepaspectratio]{badge-reusable.pdf}}%
+}}
+
+\begin{abstract}
+\blindtext
+
+\keywords{First keyword \and Second keyword \and Another keyword.}
+\end{abstract}
+
+\section{First Section}
+\blindtext[5]
+\end{document}
